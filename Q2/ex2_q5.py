@@ -6,7 +6,7 @@ from pymongo.errors import ConnectionFailure,OperationFailure
 connectionString="mongodb+srv://201701101:201701101@nosql-mwo9a.mongodb.net/test?retryWrites=true&w=majority"
 client=MongoClient(connectionString)
 db=client["201701101"]
-mycol=db["Sales_replenish"]
+mycol=db["Stock_replenish"]
 
 try:
     client.admin.command('ismaster')
